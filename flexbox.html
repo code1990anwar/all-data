@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px dotted black;
+            height: 400px;
+            justify-content: stretch;
+
+
+        }
+
+        .box {
+            border: 2px dotted red;
+
+            width: 100px;
+            font-size: 3em;
+        }
+
+        #big {
+            flex-grow: 1;
+            order-1
+        }
+
+        #big-2 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>im learing flexible</h1>
+    <div class="container">
+        <div id="big-2" class="box">Box-1</div>
+        <div id="big-2" class="box">Box-2</div>
+        <div id="big" class="box">Box-3</div>
+
+    </div>
+</body>
+
+</html>

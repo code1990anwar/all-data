@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex use</title>
+    <script src="https://kit.fontawesome.com/0440028b6a.js" crossorigin="anonymous"></script>
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .login-form input,
+        button {
+            border: 1px solid orchid;
+
+        }
+
+        .login-form button {
+            background-color: cadetblue;
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: black;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="">Home</a>
+                <a href="">products</a>
+                <a href="">Sign In</a>
+                <a href="">About us</a>
+
+            </div>
+            <div>
+                <a href=""><i class="fas fa-user-secret"></i></a>
+                <a href=""><i class="fas fa-sign-in-alt"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>Please log in</h2>
+            <input type="your name" placeholder="your name" id="" required>
+            <input type="password" placeholder="your password" id="" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
