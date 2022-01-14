@@ -20,12 +20,56 @@
             height: 400px;
             transform: rotate(180deg);
         }
+
+        .cricket {
+            border: 2px solid darkblue;
+            padding-bottom: 50px;
+
+        }
+
+        .bat {
+            transition: transform 0.2s ease-in;
+
+        }
+
+        .cricket img {
+            width: 20%;
+
+
+        }
+
+        .cricket:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .cricket:hover .ball {
+            transform: translate(700px, -100px);
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 10px;
+            position: relative;
+            left: 430px;
+            transition: transform 2s ease-out 0.3s;
+
+        }
     </style>
 </head>
 
 <body>
     <div class="box">
         <h1>transition</h1>
+    </div>
+    <div class="cricket">
+        <h2> cricket animation</h2>
+
+        <img class="bat" src="./media/cricket.jpg" alt="">
+        <div class="ball">
+        </div>
     </div>
 
 </body>
